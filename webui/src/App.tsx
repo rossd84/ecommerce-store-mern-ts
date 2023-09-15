@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { 
   createBrowserRouter,
   RouterProvider
@@ -6,8 +7,10 @@ import Home from './pages/Home';
 import ErrorPage from './pages/errorPage';
 import Cart from './pages/cart/Cart';
 import AdminPage from './pages/admin/AdminPage';
+import { CartContext } from './context/CartContext';
 
 function App() {
+  const [cart, setCart] = useState([]);
 
   const router = createBrowserRouter([
   {
@@ -26,7 +29,9 @@ function App() {
 ]);
 
   return (
+    <CartContext.Provider value={cart}>
       <RouterProvider router={router} />
+    </CartContext.Provider>
   )
 }
 
