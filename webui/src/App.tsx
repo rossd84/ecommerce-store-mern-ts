@@ -3,13 +3,14 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import Home from './pages/Home';
-import ErrorPage from './pages/errorPage';
-import Cart from './pages/cart/Cart';
-import AdminPage from './pages/admin/AdminPage';
+import Home from './pages/HomePage';
+import ErrorPage from './pages/ErrorPage';
+import Cart from './pages/CartPage';
+import AdminPage from './pages/AdminPage';
 import { CartContext } from './context/CartContext';
 
 function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [cart, setCart] = useState([]);
 
   const router = createBrowserRouter([

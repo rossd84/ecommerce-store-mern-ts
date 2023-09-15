@@ -15,4 +15,14 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@components/*', './src/components/*'],
+          ['@assets/*', './src/assets/*']
+        ]
+      }
+    }
+  }
 }

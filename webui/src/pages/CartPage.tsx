@@ -1,9 +1,6 @@
 // import { useState } from 'react';
-import Button from '../../components/ui/button/Button'
-// import { tempProducts } from './tempItems'
-// import Shoes from '../../assets/stock-shoes.jpg'
-import CartItem from '../../components/cart-item/CartItem';
-import Navbar from '../../components/navbar';
+import {Button} from '@components/ui'
+import { CartItem, Navbar } from '@components';
 
 interface CartItemProps {
   id: string;

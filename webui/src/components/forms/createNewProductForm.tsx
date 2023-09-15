@@ -1,6 +1,6 @@
-import React, { useState, ChangeEvent, FormEvent, useRef } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
-import Button from '../ui/button/Button';
+import { Button } from '@components/ui';
 
 const MAX_IMAGES = 3;
 const MAX_FILE_SIZE_MB = 1;

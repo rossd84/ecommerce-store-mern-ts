@@ -1,6 +1,5 @@
-import React from 'react'
-import Navbar from '../../components/navbar'
-import CreateNewProductForm from '../../components/forms/createNewProductForm'
+import {Navbar} from '@components'
+import CreateNewProductForm from '@components/forms/createNewProductForm'
 
 function AdminPage() {
   return (

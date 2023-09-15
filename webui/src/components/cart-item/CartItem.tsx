@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Shoes from '../../assets/stock-shoes.jpg'
+import Shoes from '@assets/stock-shoes.jpg'
 import { BsChevronLeft, BsChevronRight, BsTrash3 } from 'react-icons/bs'
 
 interface ItemInfoProps {
