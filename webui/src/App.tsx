@@ -5,6 +5,7 @@ import {
 import Home from './pages/Home';
 import ErrorPage from './pages/errorPage';
 import Cart from './pages/cart/Cart';
+import AdminPage from './pages/admin/AdminPage';
 
 function App() {
 
@@ -17,6 +18,10 @@ function App() {
   {
     path: "/cart",
     element: <Cart />
+  },
+  {
+    path: "/admin",
+    element: <AdminPage />
   }
 ]);
 
