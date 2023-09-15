@@ -1,9 +1,9 @@
 // import { useState } from 'react';
-import { Link } from 'react-router-dom'
 import Button from '../../components/ui/button/Button'
 // import { tempProducts } from './tempItems'
 // import Shoes from '../../assets/stock-shoes.jpg'
 import CartItem from '../../components/cart-item/CartItem';
+import Navbar from '../../components/navbar';
 
 interface CartItemProps {
   id: string;
@@ -48,6 +48,9 @@ function Cart() {
     alert('click')
   }
   return (
+    <>
+
+    <Navbar />
     <div className='grid md:grid-cols-4 bg-gray-300 p-12 min-h-screen'>
       <div className='md:col-span-3 bg-white rounded-md'>
         <h1 className='text-xl md:text-2xl lg:text-3xl p-8'>Shopping Cart</h1>
@@ -65,7 +68,6 @@ function Cart() {
         </div>
       </div>
       <div className='border-l px-8'>
-        <Link className='underline' to={'/'}>return Home</Link>
         <div className='bg-white flex flex-col justify-between rounded-md p-4'>
           <p>Subtotal ({tempCartList.length} item{tempCartList.length>1 && 's'}): $20.29</p>
           <div>
@@ -78,6 +80,7 @@ function Cart() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
