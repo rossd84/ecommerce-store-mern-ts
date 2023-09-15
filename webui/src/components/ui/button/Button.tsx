@@ -1,15 +1,16 @@
 import React from 'react';
 
 interface ButtonProps {
+  type: 'button' | 'submit'
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   disabled?: boolean;
   className?: string;
   variation?: string;
   overrideStyles?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false, className = '', variation = 'primary', overrideStyles = false }) => {
+const Button: React.FC<ButtonProps> = ({ type='button', label, onClick, disabled = false, className = '', variation = 'primary', overrideStyles = false }) => {
 
   const getClasses = () => {
     let classList = 'px-6 py-3 rounded-md';
@@ -28,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false, class
 
   return (
     <button
+      type={type}
       className={`${getClasses()} ${className}`}
       onClick={onClick}
       disabled={disabled}
