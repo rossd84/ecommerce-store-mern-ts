@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 import {Button} from '@components/ui'
-import { CartItem, Navbar } from '@components';
+import { CartItem } from '@components';
 
 interface CartItemProps {
   id: string;
@@ -45,9 +45,6 @@ function Cart() {
     alert('click')
   }
   return (
-    <>
-
-    <Navbar />
     <div className='grid md:grid-cols-4 bg-gray-300 p-12 min-h-screen'>
       <div className='md:col-span-3 bg-white rounded-md'>
         <h1 className='text-xl md:text-2xl lg:text-3xl p-8'>Shopping Cart</h1>
@@ -77,7 +74,6 @@ function Cart() {
         </div>
       </div>
     </div>
-    </>
   )
 }
 

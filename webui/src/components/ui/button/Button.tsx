@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ButtonProps {
-  type: 'button' | 'submit'
+  type?: 'button' | 'submit'
   label: string;
   onClick?: () => void;
   disabled?: boolean;

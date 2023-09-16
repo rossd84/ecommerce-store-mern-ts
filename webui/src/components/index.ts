@@ -1,7 +1,9 @@
-import CartItem from "./cart-item/CartItem";
+import CartItem from "./cartItem/CartItem";
 import Navbar from "./navbar";
+import Shop from "./shop/Shop";
 
 export {
   CartItem,
-  Navbar
+  Navbar,
+  Shop
 }
