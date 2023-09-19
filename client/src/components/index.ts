@@ -1,9 +1,9 @@
 import CartItem from "./cartItem/CartItem";
 import Navbar from "./navbar";
-import Shop from "./shop/Shop";
+import Products from "./products/Products";
 
 export {
   CartItem,
   Navbar,
-  Shop
+  Products
 }

@@ -3,11 +3,11 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import Home from '@pages/HomePage';
-import ErrorPage from '@pages/ErrorPage';
-import Cart from '@pages/CartPage';
-import AdminPage from '@pages/AdminPage';
-import ShopPage from '@pages/ShopPage';
+import Home from '@pages/Home';
+import ErrorPage from '@pages/Error';
+import Cart from '@pages/Cart';
+import AdminPage from '@pages/Admin';
+import ShopPage from '@pages/Products';
 import { CartContext } from './context/CartContext';
 import PageLayout from '@components/layouts/Page';
 

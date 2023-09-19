@@ -1,13 +1,13 @@
 import Shoes from '@assets/stock-shoes.jpg'
 import { Button } from '@components/ui'
 import { Link } from 'react-router-dom'
-import { Product } from './Shop';
+import { Product } from './Products';
 
 interface ItemProps {
   item: Product;
 }
 
-const ShopItem = ({item}: ItemProps) => {
+const ProductsItem = ({item}: ItemProps) => {
   return (
     <div className='bg-white shadow-sm hover:scale-[1.01] duration-200'>
       <Link to="/shop">
@@ -28,4 +28,4 @@ const ShopItem = ({item}: ItemProps) => {
   )
 }
 
-export default ShopItem
+export default ProductsItem

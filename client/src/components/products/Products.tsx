@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios"
-import ShopItem from "./ShopItem"
+import ProductsItem from "./ProductsItem"
 
 export interface Product {
   _id: number;
@@ -11,7 +11,7 @@ export interface Product {
   description: string;
 }
 
-const Shop = () => {
+const Products = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -44,7 +44,7 @@ const Shop = () => {
           {products.map((product: Product) => {
             // console.log(product)
             return (
-            <ShopItem 
+            <ProductsItem 
               key={product._id}
               item={product}
             />
@@ -56,4 +56,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default Products
